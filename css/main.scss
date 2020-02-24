@@ -1,0 +1,20 @@
+@import './resets';
+@import './variables';
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+    font-weight: map-get($font-weights, bold);
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+
+    #{&}__paragraph {
+        font-weight: weight(bold);
+    }
+}
