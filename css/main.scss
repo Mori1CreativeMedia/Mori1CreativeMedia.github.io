@@ -5,10 +5,12 @@
     @return map-get($font-weights, $weight-name)
 }
 
-body {
+html, body {
     background: $primary-color;
     color: $text-color;
     font-weight: map-get($font-weights, bold);
+    height: 100%;
+    width: 100%;
 }
 .main {
     width: 90%;
@@ -17,4 +19,42 @@ body {
     #{&}__paragraph {
         font-weight: weight(bold);
     }
+}
+.navbar {
+    padding: .8rem;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.2em !important;
+}
+.jambotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+      padding-top: 2rem;
+}
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-twitter {
+    color: #00aced;
+}
+.fa-github {
+    color: #f3f3f3;
 }
